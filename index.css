@@ -1,0 +1,64 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+@keyframes blink{
+  0%{
+      color:red;
+      opacity : 1;
+  }
+  50%{
+      color:green;
+      opacity : 0;
+  }
+  100%{
+      color:yellow;
+      opacity : 1;
+  }
+}
+.mainDiv{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: rgb(36, 145, 160);
+}
+.centerDiv{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+h1{
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  color: #ecf0f1;
+  text-shadow: 1px 4px 4px #18232b;
+  font-size: 2.1rem;
+  animation: blink 1s linear infinite;
+}
+h2{
+  text-align: center;
+}
+textarea{
+  background-color: #444;
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+  border-radius: 10px 10px 0 0;
+  border: 20px solid rgba(37, 75, 87, 0.747);
+  color: white;
+}
